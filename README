@@ -1,0 +1,26 @@
+Simple files showing my solutions to the tasks
+
+Dependencies:
+    - Pandas
+    - Requests
+    - matplotlib.pyplot
+    - datetime
+
+Running:
+    Navigate to the tesseract test folder and run them on command line with "python assignment1.py" / "python assignment2.py"
+
+
+Train of thought for the solutions:
+
+assignment1:
+    Had to refresh my mind on using APIs but quickly got to Bitfinex API documentation and found public API for candles "https://docs.bitfinex.com/reference#rest-public-candles"
+    getting the data was quite simple, but I had to tool around with the parameters to get the correct interwal
+    Did some formating so it could be plotted better
+    Plotted simple graphs on how the data looks like, was planning on doing some more but i felt this was sufficient
+
+assignment 2:
+    This was more alien subject for me
+    Luckily there is always an answer to be found "http://www.gregreda.com/2015/02/15/web-scraping-finding-the-api/"
+    I checked to see what my network tab looked like and found the correct looking request URL
+    I am not quite certain but I think I found the URL requested ("https://api-pub.bitfinex.com/v2/conf/pub:map:currency:sym,pub:list:currency:paper,pub:map:currency:label,pub:map:currency:tx:fee")
+    after requests and a bit of data handling and the dataframe of tickers and fees are there 
